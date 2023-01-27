@@ -8,7 +8,7 @@ link = "https://ya.ru"
 
 capabilities = {"browserName": 'chrome', "browserVersion": "109.0", "platformName": "Linux"}
 
-wd = webdriver.Remote(command_executor=f"http://95.163.236.225:4444/wd/hub", desired_capabilities=capabilities)
+wd = webdriver.Remote(command_executor=f"http://5.63.155.71:4444/wd/hub", desired_capabilities=capabilities)
 
 def test_ya():
     wd.get(link)
