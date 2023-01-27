@@ -13,4 +13,4 @@ wd = webdriver.Remote(command_executor=f"http://5.63.155.71:4444/wd/hub", desire
 def test_ya():
     wd.get(link)
     wd.find_element(By.CSS_SELECTOR, "input.search3__input").send_keys("Проверка докера")
-    time.sleep(1000)
+    time.sleep(60)
